@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+nav.topo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 80%;
+}
+
+nav a{
+    margin: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    position: relative;
+    margin-bottom: 5%;
+    border: .1rem solid black;
+    width: 25%;
+    height: 10rem;
+}
+
+nav.interact{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: .3rem;
+    bottom: 3%;
+    right: 5%;
+}
+
+.interact img{
+    margin-left: 5%;
+}
+
+article h2{
+    margin-bottom: .2rem;
+    margin-left: 5%;
+}
+
+article .txt{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+}
+
+article img{
+    
+}
+
+
