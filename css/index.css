@@ -9,7 +9,7 @@ header{
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 6.5rem;
 }
 
 footer{
@@ -27,13 +27,22 @@ footer{
 nav.topo{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     position: absolute;
-    top: .2%;
-    left: 78%;
+    top: .1rem;
+    right: 1rem;
 }
 
 nav a{
+    display: flex;
+    flex-direction: row;
     margin: 5%;
+}
+
+h1{
+    position: absolute;
+    top: .2rem;
+    left: .3rem;
 }
 
 main{
@@ -44,22 +53,32 @@ main{
 
 article{
     position: relative;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
     border: .1rem solid black;
-    width: 25%;
+    width: 20rem;
     height: 10rem;
 }
 
 .postIMG{
     position: absolute;
+    display: flex;
+    flex-direction: column;
     bottom: 30%;
     left: 10%;
 }
 
 figure.postIMG{
     position: absolute;
+    display: flex;
+    flex-direction: row;
     bottom: 30%;
     left: 3%;
+}
+
+figure.postIMG img{
+    margin-left: .2rem;
 }
 
 nav.interact{
@@ -97,7 +116,8 @@ article .legenda{
     flex-direction: column;
     left: 50%;
     transform: translateX(-10%);
-    bottom: 45%;   
+    bottom: 40%;   
+    font-size: 1rem;
 }
 
 div.user{
