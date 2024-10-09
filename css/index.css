@@ -23,6 +23,39 @@ footer{
     background-color: white;
 }
 
+.userProfile{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(-20%);
+    margin-bottom: 1rem;
+    top: -3rem;
+    left: 5rem;
+    white-space: Nowrap;    
+}
+
+.userProfile img{
+    position: absolute;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+.userProfile h1{
+    position: absolute;
+    top: 3.5rem;
+    border-left: .1rem solid black;
+    border-bottom: .1rem solid black;
+    left: 5.3rem;
+    transform: translateX(500%);
+}
+
+.userProfile .chat{
+    position: absolute;
+    top: 3.3rem;
+    left: 13rem;
+    transform: translateX(3000%);
+}
 
 nav.topo{
     display: flex;
@@ -33,7 +66,7 @@ nav.topo{
     right: 1rem;
 }
 
-nav a{
+nav.topo a{
     display: flex;
     flex-direction: row;
     margin: 5%;
@@ -49,7 +82,39 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
+
+nav.feedback{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 9rem;
+    top: 5rem;
+}
+
+nav.feedback img{
+    position: absolute;
+    left: 24.5rem;
+    margin-right: .4rem;
+}
+
+.Ftxt{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 30.8rem;
+    top: .01rem;
+    color: black;
+    text-decoration: none;
+    border: .1rem solid;
+}
+
+/* div.pdata{
+
+} */
+
 
 article{
     position: relative;
