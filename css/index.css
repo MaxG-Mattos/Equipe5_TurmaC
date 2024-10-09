@@ -28,7 +28,8 @@ nav.topo{
     display: flex;
     flex-direction: row;
     position: absolute;
-    left: 80%;
+    top: .2%;
+    left: 78%;
 }
 
 nav a{
@@ -95,5 +96,26 @@ article .legenda{
     display: flex;
     flex-direction: column;
     left: 50%;
+    transform: translateX(-10%);
     bottom: 45%;   
+}
+
+div.user{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+div.user img{
+    position: absolute;
+    border-radius: 50%;
+    left: .2rem;
+    top: .2rem;
+}
+
+div.user h2{
+    position: absolute;
+    top: .8rem;
+    left: 2rem;
 }
