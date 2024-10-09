@@ -12,6 +12,18 @@ header{
     margin-bottom: 5%;
 }
 
+footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0%;
+    border-top: .1rem solid black;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
 nav.topo{
     display: flex;
     flex-direction: row;
@@ -35,6 +47,18 @@ article{
     border: .1rem solid black;
     width: 25%;
     height: 10rem;
+}
+
+.postIMG{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+
+figure.postIMG{
+    position: absolute;
+    bottom: 30%;
+    left: 3%;
 }
 
 nav.interact{
@@ -66,8 +90,10 @@ article .txt{
     bottom: 50%;
 }
 
-article img{
-    
+article .legenda{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    bottom: 45%;   
 }
-
-
