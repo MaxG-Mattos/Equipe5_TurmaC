@@ -1,6 +1,82 @@
+.perfil1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.ftperfil {
+    position: relative;
+    border-radius: 50%;
+    left: .5rem;
+    top: .2rem;
+    margin-bottom: 1rem;
+}
+
+.feedb {
+    position: relative;
+    right: .5rem;
+}
+
+.msg {
+    position: relative;
+    right: .5rem;
+}
+
+.linha1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.linha2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    width: 100%;
+}
+
+.h1_perfil {
+    position: relative;
+    justify-self: flex-start;
+    left: 1rem;
+}
+
+.perfil2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:stretch;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.perfil3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:stretch;
+    position: relative;
+}
+
+.pperfil {
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    left: .5rem;
+} 
+
 body{
     display: flex;
     flex-direction: column;
+    height: 100%; 
 }
 
 header{
@@ -23,39 +99,6 @@ footer{
     background-color: white;
 }
 
-.userProfile{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    transform: translateX(-20%);
-    margin-bottom: 1rem;
-    top: -3rem;
-    left: 5rem;
-    white-space: Nowrap;    
-}
-
-.userProfile img{
-    position: absolute;
-    border-radius: 50%;
-    flex-grow: 1;
-}
-
-.userProfile h1{
-    position: absolute;
-    top: 3.5rem;
-    border-left: .1rem solid black;
-    border-bottom: .1rem solid black;
-    left: 5.3rem;
-    transform: translateX(500%);
-}
-
-.userProfile .chat{
-    position: absolute;
-    top: 3.3rem;
-    left: 13rem;
-    transform: translateX(3000%);
-}
 
 nav.topo{
     display: flex;
@@ -66,10 +109,23 @@ nav.topo{
     right: 1rem;
 }
 
-nav.topo a{
+nav.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border: .1rem solid black;
+    bottom: 0%;
+    width: 2%;
+}
+
+
+nav a{
     display: flex;
     flex-direction: row;
     margin: 5%;
+    color: black;
+    text-decoration: none;
 }
 
 h1{
@@ -82,39 +138,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    justify-content: center; /* aq */
 }
-
-nav.feedback{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 9rem;
-    top: 5rem;
-}
-
-nav.feedback img{
-    position: absolute;
-    left: 24.5rem;
-    margin-right: .4rem;
-}
-
-.Ftxt{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    left: 30.8rem;
-    top: .01rem;
-    color: black;
-    text-decoration: none;
-    border: .1rem solid;
-}
-
-/* div.pdata{
-
-} */
-
 
 article{
     position: relative;
@@ -203,4 +228,101 @@ div.user h2{
     position: absolute;
     top: .8rem;
     left: 2rem;
+}
+
+.linha-cabecalho{
+    display: flex;
+    width: 100%;
+    flex-direction: row; 
+    justify-content:space-between;
+    align-items: center;
+    margin: .3rem;
+} 
+
+.header-feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.h1-feedback{
+    position: relative;
+    top: .2rem;
+    left: .3rem;
+}
+
+.art-feed{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+} 
+
+.divzinha{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: .3rem;
+    
+}
+
+
+/* FONTES */ 
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400&family=Anek+Gujarati:wght@400&display=swap');
+
+header{
+    background-color: #6FAAF6; 
+}
+body {
+    background-color: white; /* Cor de fundo*/
+}
+
+h1 {
+    font-family: 'PT Serif', serif; /* Fonte principal */
+    color: #0A0773; /* Cor do texto */
+    font-size: 2.5rem; /* Tamanho da fonte */
+} 
+
+footer{
+    background-color: #6FAAF6; /* Cor de fundo do footer*/
+}
+p, h3{
+    font-family: 'Anek Gujarati', sans-serif; /* Fonte textos longos */
+    font-size: 1rem; /* Tamanho da fonte*/
+    background-color: white; /* Cor de fundo*/
+    box-shadow: 0 0.125rem 0.3125rem rgb(0, 0, 0,); /* Sombra */
+    color: #0A0773 ; 
+}
+
+nav a{
+    font-family: 'Anek Gujarati', sans-serif; /* Fonte textos longos */
+    font-size: 1rem; /* Tamanho da fonte*/
+    background-color: rgb(11, 90, 193); /* Cor de fundo*/
+    box-shadow: 0 0.125rem 0.3125rem rgb(0, 0, 0,); /* Sombra */
+    color: rgb(255, 255, 0);
+}
+
+nav.botao {
+    background-color: rgb(11, 90, 193); /* Cor de fundo*/
+    box-shadow: 0 0.125rem 0.3125rem rgb(0, 0, 0,); /* Sombra */
+}
+
+main h2 {
+    font-family: 'PT Serif', serif; /*Fonte principal*/
+    color:  #0A0773;  /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte */
 }
