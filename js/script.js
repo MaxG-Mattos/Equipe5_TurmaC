@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         like.addEventListener("click", function() {
             if (like.src.includes(descurtida)) {
                 like.src = curtida;
-                localStorage.setItem(`likeState_${i}`, "curtido"); //localStorage: guardar as infos
+                localStorage.setItem(`likeState_${i}`, "curtido"); //localStorage: //getItem: guardar //set: tipo ler
             } else {
                 like.src = descurtida;
                 localStorage.setItem(`likeState_${i}`, "descurtido");
@@ -34,12 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
     //seleção de imagens galeria
 
     const imagens = document.querySelectorAll(".foto_galeria");
-    const imagemselecionada = document.getElementById("foto_escolhida").querySelector("img");
+    const imagemselecionada = document.querySelector(".foto_escolhida");
 
     imagens.forEach(button => {
         button.addEventListener("click", function() {
             const img_click = this.querySelector("img").src;
-            
             imagemselecionada.src = img_click;
             imagemselecionada.className = img_click.className; // não entendi pq n funcionou..
     });
