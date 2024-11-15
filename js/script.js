@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+
+
+    //Secção de curtidas
     const likes = document.querySelectorAll(".like");
     
     const curtida = "img/afirmativo.png";
@@ -23,4 +27,30 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+
+
+
+    //seleção de imagens galeria
+
+    const imagens = document.querySelectorAll(".foto_galeria");
+    const imagemselecionada = document.getElementById("foto_escolhida").querySelector("img");
+
+    imagens.forEach(button => {
+        button.addEventListener("click", function() {
+            const img_click = this.querySelector("img").src;
+            
+            imagemselecionada.src = img_click;
+            imagemselecionada.className = img_click.className; // não entendi pq n funcionou..
+    });
+    // imagens.forEach(function(imagem) {
+    //     imagem.addEventListener("click", function() {
+    //         imagemselecionada.src = imagem.src;
+    //         imagemselecionada.className = imagem.className;
+    // });
+    });
+
+
+
+    //Próxima
 });
