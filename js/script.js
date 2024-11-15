@@ -30,6 +30,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    //Secção participar de fórum
+    const adds = document.querySelectorAll(".adicionar");
+    
+    const adicionado = "img/verificar_menor.png";
+    const desadicionado = "img/mais.png"; 
+
+    adds.forEach(function(add, j) {
+        const atual_a = localStorage.getItem(`addState_${j}`);
+        
+        if (atual_a === "adicionado") {
+            add.src = adicionado;
+        } else {
+            add.src = desadicionado;
+        }
+
+        add.addEventListener("click", function() {
+            if (add.src.includes(desadicionado)) {
+                add.src = adicionado;
+                localStorage.setItem(`addState_${j}`, "adicionado"); 
+            } else {
+                add.src = desadicionado;
+                localStorage.setItem(`addState_${j}`, "desadicionado");
+            }
+        });
+    });
+
+
+
 
     //seleção de imagens galeria
 
