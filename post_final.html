@@ -3,21 +3,23 @@
     <head>
         <title>Post</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/index.css"> 
+        <script src="js/script.js"></script> 
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400&family=Anek+Gujarati:wght@400&display=swap" rel="stylesheet"> <!--FONTE-->
     </head>
-    <body> 
+    <body id="body_post_final"> 
         <header>
-            <a href="postagem.html"><img src="img/seta-para-a-esquerda.png" alt="Voltar"></a> <!--volta pra tela anterior-->
+            <a href="selecao_imagem.html"><img src="img/seta-para-a-esquerda.png" alt="Voltar"></a> <!--volta pra tela anterior-->
             <nav class="topo"> <!--interações constantes do header-->
                 <a href="index.html"><img src="img/cruz-pequeno.png" alt="Cancelar"></a> <!--volta para tela inicial-->
                 <a href="index.html"><img src="img/verificar.png" alt="Postar"></a> 
             </nav>
         </header>
 
-        <main>
-            <img src="img/ursin.jpeg" alt="Foto Selecionada"> <!--Não terá foto se essa não for selecionada!--> 
+        <main  id="main_post_final">
+            <img class="foto_post" src="img/ursin.jpeg" alt="Foto Selecionada"> <!--Não terá foto se essa não for selecionada!--> 
             <h2>Legendas</h2>
             <p> 
               <input type="text">  <!--Legendas!--> 
